@@ -13,7 +13,9 @@
 - **Display**: 1× HDMI
 
 ### Building
-\\\ash
+```bash
+git clone --recursive https://github.com/a276519803-sudo/edk2-rk3588-bdy-g98.git
+cd edk2-rk3588-bdy-g98
 ./build.sh --device bdy-g98 --release Release
 ```
 Output: `RK3588_NOR_FLASH.img`
