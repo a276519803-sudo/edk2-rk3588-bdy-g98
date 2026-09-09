@@ -11,12 +11,9 @@
 - **Storage**: 2× NVMe (PCIe 3.0 x2 each) + eMMC
 - **Ethernet**: 2× YT9215 DSA switches (8 ports) + 2× RTL8125 PCIe
 - **Display**: 1× HDMI
-- **Device Tree**: rk3588-bdy-g98.dtb (vendor mode)
 
 ### Building
 \\\ash
-git clone --recursive https://github.com/a276519803-sudo/edk2-rk3588-bdy-g98.git
-cd edk2-rk3588-bdy-g98
 ./build.sh --device bdy-g98 --release Release
 ```
 Output: `RK3588_NOR_FLASH.img`
@@ -261,6 +258,7 @@ In addition to the default paths above, it is possible to specify custom ones vi
 | `rk3588s-nanopi-r6s`                    | NanoPi R6S                    |
 | `rk3588s-nanopi-m6`                     | NanoPi M6                     |
 | `rk3588-hinlink-h88k`                   | H88K                          |
+| `rk3588-bdy-g98`                    | BDY-G98                       |
 
 **Notes:**
 * The firmware applies some fix-ups to the DTB depending on the user settings (e.g. PCIe/SATA/USB selection, making SATA overlays redundant). These fix-ups are not applied when providing overrides by other means, such as the Grub `devicetree` command.
