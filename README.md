@@ -8,7 +8,7 @@
 ### Hardware Specifications
 - **SoC**: Rockchip RK3588 (4×Cortex-A55 + 4×Cortex-A76)
 - **PMIC**: RK8602 (0x42) + RK8603 (0x43) on I2C0
-- **Storage**: 2× NVMe (PCIe 3.0 x2 each) + eMMC
+- **Storage**: 2× NVMe (PCIe 3.0 x2 each) + SPI
 - **Ethernet**: 2× YT9215 DSA switches (8 ports) + 2× RTL8125 PCIe
 - **Display**: 1× HDMI
 
